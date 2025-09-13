@@ -1,29 +1,29 @@
-import math
 from modules import arithmetic 
+from modules import menu
+import sys
 
-programRunning = True
+"""
+Command-line calculator tool.
 
-# Exploration of Python's fundamentals.
+User inputs the type of calculation and the numbers to calculate
+"""
 
-# Match Case selection for calculation selection:
-while(programRunning):
-    print("\nPlease select the calculation that you wish to perform:")
-    print("\n-------------------------------------------------------")
-    print("0 -- Square root")
-    print("1 -- Exponents")
-    print("2 -- Cube Root")
-    print("-------------------------------------------------------")
+# User chooses the type of calculation:
+while True:
+    menu.display_menu_prompt()
     calculationSelection = int(input("\nPlease select the calculation that you wish to perform:"))
 
     match calculationSelection:
         case 0:
-            arithmetic.selectSquareRoot()
+            arithmetic.calculate_square_root()
         case 1:
-            arithmetic.selectExponent()
+            arithmetic.raise_to_exponent()
         case 2:
-            arithmetic.selectCubeRoot()
+            arithmetic.calculate_cube_root()
+        case 3:
+            sys.exit(0)
         case _:
             print("\nERROR: Invalid Selection\n")
 
-
-
+if __name__ == '__main__':
+    main()
