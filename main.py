@@ -1,8 +1,3 @@
-# --------------------------------------------------
-#
-#
-#
-
 import math
 from modules import arithmetic 
 
@@ -29,5 +24,6 @@ while(programRunning):
             arithmetic.selectCubeRoot()
         case _:
             print("\nERROR: Invalid Selection\n")
+
 
 
