@@ -5,6 +5,10 @@ Date last edited : 13/09/2025
 
 -------------------------------------
 
+This program is a command-line calculator that asks the user to select a calculation, then enter the numbers for said calculation.
+
+-------------------------------------
+
 Project goal : explore Python fundamentals such as:
 ---------------------------------------------------
 
@@ -29,5 +33,6 @@ Project goal : explore Python fundamentals such as:
 - Type casting
 
 -------------------------------------
+
 
 To explore these fundamentals, this program takes a user input for a certain mathmatical calculation, then performs it and returns it.
